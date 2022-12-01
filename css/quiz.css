@@ -1,0 +1,80 @@
+body {
+    color: beige;
+}
+
+.choicebox {
+   display: flex;
+   margin-bottom: 0.8rem;
+   width: 100%;
+   border-radius: 4px;
+   background: darkolivegreen;
+   font-size: 3rem;
+   min-width: 80rem;
+}
+
+.choicebox:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem darkolivegreen;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.optionprefix {
+    padding: 2rem 2.5rem;
+    color: white;
+}
+
+.optiontext {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgb(86, 178, 50) 0%, rgb(86, 178, 50) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgb(171, 108, 30) 0%, rgb(171, 108, 30) 100%);
+}
+
+/* HEADS UP DISPLAY */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: darkolivegreen;
+}
+
+#question {
+    color: darkolivegreen;
+}
+
+.hudmaintext {
+    text-align: center;
+}
+
+#progressbar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid green;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressbarfull {
+    height: 100%;
+    background-color: rgba(122, 26, 26, 0.945);
+    width: 0%;
+}
+
+@media screen and (max-width:768px){
+    .choicebox {
+        min-width: 40rem;
+    }
+}
