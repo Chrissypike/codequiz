@@ -1,8 +1,8 @@
-const question = document.querySelector('#question');
-const options = Array.from(document.querySelectorAll('.optiontext'));
-const progressItems = document.querySelector('#progressItems');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progressBarFull');
+let question = document.querySelector('#question');
+let options = Array.from(document.querySelectorAll('.optiontext'));
+let progressItems = document.querySelector('#progressItems');
+let scoreText = document.querySelector('#score');
+let progressBarFull = document.querySelector('#progressBarFull');
 
 let currentQuestion = {}
 let acquireAnswers = true
@@ -17,7 +17,7 @@ let questions = [
         option2: 'booleans',
         option3: 'alerts',
         option4: 'numbers',
-        answer: numbers,
+        answer: 'numbers',
     },
 
     {
